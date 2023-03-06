@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg-color: hsl(218, 23%, 16%);
+  --font-color: hsl(193, 38%, 86%);
+  --button-shadow: hsl(217, 19%, 38%);
+  --secondary-color: hsl(217, 19%, 24%);
+  --neon-green: hsl(150, 100%, 66%);
+}
+body {
+  background-color: var(--bg-color);
+  margin: 10%;
+}
+
+main {
+  font-family: "Manrope", sans-serif;
+  font-size: 11px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 29vh auto 0;
+  height: 21rem;
+  border-radius: 1rem;
+  max-width: 35rem;
+  padding: 3rem 1rem;
+  background-color: var(--secondary-color);
+}
+
+.advice-id {
+  font-weight: 600;
+  color: var(--neon-green);
+  letter-spacing: 4px;
+  font-weight: lighter;
+}
+
+.advice-text {
+  color: var(--font-color);
+  font-weight: 800;
+  font-size: 28px;
+  min-height: 170px;
+  margin: 20px 2.3vw;
+  text-align: center;
+  padding-top: 10px;
+}
+
+main > img {
+  width: 90%;
+  margin: 0 auto 20px;
+}
+
+.icon-container {
+  background-color: var(--neon-green);
+  margin: 0 auto;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+}
+
+.icon-container > img {
+  width: 20px;
+  margin: 30% auto;
+}
+
+button:hover {
+  box-shadow: 0 0 20px var(--neon-green), 0 0 40px var(--button-shadow);
+  transition-delay: 0.1s;
+}
+
+@media (max-width: 875px) {
+  main {
+    max-width: 33rem;
+  }
+}
+
+@media (max-width: 675px) {
+  main {
+    max-width: 30rem;
+  }
+  .advice-text {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 575px) {
+  main {
+    max-width: 27rem;
+  }
+}
+
+@media (max-width: 475px) {
+  main {
+    max-width: 23rem;
+  }
+}
+
+@media (max-width: 475px) {
+  .advice-text {
+    font-size: 22px;
+  }
+  main > img {
+    margin: 0 auto 24px;
+  }
+}
